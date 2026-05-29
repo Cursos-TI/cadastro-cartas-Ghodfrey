@@ -7,18 +7,19 @@
 int main() {
   
   // Área para definição das variáveis para armazenar as propriedades das cidades
+  
   char nome[50];
   char estado;
   int população;
   float pib;
   int pontosTuristicos;
   float area; 
-  char codigo[10];
+  char codigo[3];
   
   // Área para entrada de dados
 
   printf("Digite o nome da cidade:\n");
-  scanf("%s", &nome);
+  scanf("%s", nome);
 
   printf("digite o estado da cidade com apenas uma letra de A a H:\n");
   scanf("%c", &estado);
