@@ -14,8 +14,12 @@ int main() {
   char estadocarta2[3];
   int populacaocarta1;
   int populacaocarta2;
+  float densidadecarta1;
+  float densidadecarta2;
   float pibcarta1;
   float pibcarta2;
+  float pibpercapitacarta1;
+  float pibpercapitacarta2;
   int pontosturisticoscarta1;
   int pontosturisticoscarta2;
   float areacarta1;
@@ -72,6 +76,16 @@ int main() {
 
   printf("digite um codigo para a cidade, sendo ele a letra escolhida pra o estado e um numero de 01 a 04:\n");
   scanf("%s", codigocarta2);
+
+  //calculo do PIB per capita e densidade da cidade1 e cidade2
+  
+  pibpercapitacarta1 = pibcarta1 / populacaocarta1;
+
+  pibpercapitacarta2 = pibcarta2 / populacaocarta2;
+
+  densidadecarta1 = populacaocarta1 / areacarta1;
+
+  densidadecarta2 = populacaocarta2 / areacarta2;
   
   //exibição dos dados da cidade1
 
@@ -91,6 +105,10 @@ int main() {
 
   printf("Codigo: %s\n", codigocarta1);
 
+  printf("PIB per capita: %f\n", pibpercapitacarta1);
+
+  printf("Densidade demográfica: %f\n", densidadecarta1);
+
   //exibição dos dados da cidade2
 
   printf("Dados da cidade 2:\n");
@@ -108,6 +126,10 @@ int main() {
   printf("area: %f\n", areacarta2);
 
   printf("Codigo: %s\n", codigocarta2);
+
+  printf("PIB per capita: %f\n", pibpercapitacarta2);
+
+  printf("Densidade demográfica: %f\n", densidadecarta2);
 
   return 0;
 }
